@@ -1,12 +1,11 @@
-let particles = document.querySelectorAll('.particles'),
+let particles = document.querySelectorAll('canvas.particles'),
 		radius = 1.35,
 		number = 100
 
 particles.forEach(node => {
 
-	let color = node.dataset.color
-
-	const ctx = node.getContext('2d'),
+	const color = node.dataset.color,
+				ctx = node.getContext('2d'),
 				clr = hexToRgbA(color),
 				width = window.innerWidth,
 				height = window.innerHeight
